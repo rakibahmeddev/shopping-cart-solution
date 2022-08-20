@@ -24,6 +24,7 @@ document.getElementById("btn-case-plus").addEventListener("click", function () {
   const newCaseNumber = updateCaseNumber(true);
 
   updateCaseTotalPrice(newCaseNumber);
+  CalculateSubtotal();
 });
 
 // minus button
@@ -33,4 +34,5 @@ document
     const newCaseNumber = updateCaseNumber(false);
 
     updateCaseTotalPrice(newCaseNumber);
+    CalculateSubtotal();
   });
